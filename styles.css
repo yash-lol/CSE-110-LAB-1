@@ -1,23 +1,23 @@
-/* Set logo max-width */
 .logo {
-    max-width: 400px; /* Limit logo width */
+    max-width: 400px; 
+    width: 100%; 
 }
 
-/* Sticky Navigation bar */
+
 #navbar {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #182b49; /* Darker background */
+    background-color: #182b49;
     z-index: 1000;
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
-/* Navbar links */
+
 .navbar li {
     list-style: none;
     margin: 0;
@@ -32,22 +32,13 @@
     font-size: 28px;
 }
 
-.navbar li a.active {
-    background-color: #333;
-}
 
-.navbar li a:hover {
-    background-color: #333;
-    color: white;
-}
-
-/* Adjust scroll margin */
 .section1, .section2, .section3 {
     scroll-margin-top: 60px;
     font-size: 28px;
 }
 
-/* Style for Section 1 */
+
 .section1 {
     background-color: rgb(245, 240, 230);
     display: inline-block;
@@ -55,7 +46,7 @@
     padding: 20px;
 }
 
-/* Style for Section 2 */
+
 .section2 {
     background-image: url('https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg');
     color: white;
@@ -68,25 +59,48 @@
     color: white;
 }
 
-/* Section 3 - Grid Layout */
+
 .section3 {
-    background-color: rgb(245, 240, 230); /* Same styling as Section 1 */
+    background-color: rgb(245, 240, 230); 
     padding: 20px;
 }
 
-/* Grid container */
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 25px; /* 25px gap between items */
-    justify-content: center; /* Center the grid */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px;
 }
 
-/* Grid item style */
+
 .grid-item {
-    background-color: #182b49; /* Dark blue background */
-    color: white; /* White text color */
-    max-height: 500px; /* Set max height */
-    overflow-y: scroll; /* Enable scrolling if content exceeds height */
+    background-color: #182b49;
+    color: white;
     padding: 15px;
+    max-height: 500px;
+    overflow-y: scroll; 
+    text-align: left;
+}
+
+
+@media screen and (max-width: 800px) {
+    #navbar {
+        display: none;
+    }
+
+    .logo {
+        max-width: 75%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }
