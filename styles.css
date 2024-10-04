@@ -32,12 +32,15 @@
     font-size: 28px;
 }
 
+.navbar li a:hover {
+    background-color: #1f4b72; 
+    color: white; 
+}
 
 .section1, .section2, .section3 {
     scroll-margin-top: 60px;
     font-size: 28px;
 }
-
 
 .section1 {
     background-color: rgb(245, 240, 230);
@@ -45,7 +48,6 @@
     width: 100%;
     padding: 20px;
 }
-
 
 .section2 {
     background-image: url('https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg');
@@ -59,7 +61,6 @@
     color: white;
 }
 
-
 .section3 {
     background-color: rgb(245, 240, 230); 
     padding: 20px;
@@ -72,7 +73,6 @@
     gap: 25px;
 }
 
-
 .grid-item {
     background-color: #182b49;
     color: white;
@@ -81,7 +81,6 @@
     overflow-y: scroll; 
     text-align: left;
 }
-
 
 @media screen and (max-width: 800px) {
     #navbar {
